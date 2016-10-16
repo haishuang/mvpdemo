@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">mvpdemo</string>
+    <string name="cb_login_agree">我已经阅读并同意相关服务协议</string>
+</resources>

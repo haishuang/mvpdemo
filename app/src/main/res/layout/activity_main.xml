@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEDF1">
+
+    <TextView
+        android:id="@+id/tv_login_title"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:background="#12B7F5"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="添加账号"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/tv_login_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:padding="20dp"
+        android:text="取消"
+        android:textColor="#ffffff"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_login_title"
+        app:layout_constraintRight_toRightOf="@+id/tv_login_title"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/et_login_name"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="账号/手机号/邮箱"
+        android:inputType="textPersonName"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_login_title"
+        app:layout_constraintVertical_bias="0.13"
+        tools:ignore="HardcodedText,LabelFor,MissingConstraints,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_name"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText,LabelFor" />
+
+    <Button
+        android:id="@+id/btn_login_to_login"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_login_button_bg"
+        android:text="登  陆"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_password"
+        app:layout_constraintVertical_bias="0.03"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cb_login_agree"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_to_login"
+        app:layout_constraintVertical_bias="0.03"
+        tools:ignore="MissingConstraints,SmallSp" />
+
+
+</android.support.constraint.ConstraintLayout>
+
